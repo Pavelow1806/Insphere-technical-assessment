@@ -1,0 +1,6 @@
+@Insphere.API_HostAddress = http://localhost:5059
+
+GET {{Insphere.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
