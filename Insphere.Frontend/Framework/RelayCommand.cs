@@ -7,6 +7,10 @@ using System.Windows.Input;
 
 namespace Insphere.Frontend.Framework
 {
+    /// <summary>
+    /// Stanadrd class for operating on ICommands (enabling MVVM for button clicks)
+    /// </summary>
+    /// <param name="execute">The action to execute</param>
     public class RelayCommand(Action<object> execute) : ICommand
     {
 

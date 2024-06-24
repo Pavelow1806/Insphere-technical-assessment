@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace Insphere.Frontend.Models
 {
+    /// <summary>
+    /// Re-implementation of Insphere.Protos.PathDriftCoordinatesResponse, due to a serialization issue with RepeatedFields when using traditional HTTP request.
+    /// </summary>
     public class PathDriftResponse : ResponseBase
     {
         public RepeatedField<PathDriftCoordinate> Coordinates { get; set; } = new RepeatedField<PathDriftCoordinate>();

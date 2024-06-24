@@ -10,6 +10,11 @@ namespace Insphere.Frontend.Extensions
 {
     public static class PathDriftCoordinateExtensions
     {
+        /// <summary>
+        /// Convert Path Drift coordinate from the API into a simpler usable model.
+        /// </summary>
+        /// <param name="coordinate">The coordinate being converted</param>
+        /// <returns>The model that's been simplified</returns>
         public static PathDriftModel ConvertToModel(this PathDriftCoordinate coordinate)
         {
             return new PathDriftModel

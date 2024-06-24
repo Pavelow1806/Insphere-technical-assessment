@@ -22,6 +22,11 @@ namespace Insphere.Frontend.Services.API
             _httpClient = httpClient;
         }
 
+        /// <summary>
+        /// Get coordinates from the API asynchronously.
+        /// </summary>
+        /// <param name="cancellationToken">Cancellation token for the request (chains through the API and Reader service)</param>
+        /// <returns>The response from the API</returns>
         public async Task<PathDriftResponse> GetCoordinates(CancellationToken cancellationToken = default)
         {
             try
