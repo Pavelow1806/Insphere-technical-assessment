@@ -7,13 +7,17 @@ namespace Insphere.Reader.Services.Reader
 {
     public class ReaderService : Protos.Reader.ReaderBase
     {
-        private readonly ILogger<ReaderService> _logger;
         private readonly ICsvReader _csvReader;
-        public ReaderService(ILogger<ReaderService> logger, ICsvReader csvReader)
+        public ReaderService(ICsvReader csvReader)
         {
-            _logger = logger;
             _csvReader = csvReader;
         }
+        /// <summary>
+        /// Read Drift Path CSV data, process it.
+        /// </summary>
+        /// <param name="request">Ignore this, it's for gRPC use only</param>
+        /// <param name="context">Used for the cancellation token primarily</param>
+        /// <returns>Response including centre point coordinates and list of points</returns>
         public override async Task<PathDriftCoordinatesResponse> GetCoordinates(Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
         {
             var path = Path.Combine(Environment.CurrentDirectory, "Data", "run1.csv");

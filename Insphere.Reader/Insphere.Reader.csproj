@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Configuration\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Insphere.Global\Insphere.Global.csproj" />
     <ProjectReference Include="..\Insphere.Reader.Models\Insphere.Reader.Models.csproj" />
 	<Protobuf Include="..\Insphere.Global\Protos\PathDrift.proto" GrpcServices="Server" />

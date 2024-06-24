@@ -6,6 +6,11 @@ namespace Insphere.Reader.Extensions
 {
     public static class DriftPathRawDataExtensions
     {
+        /// <summary>
+        /// Validate Path Drift raw data.
+        /// </summary>
+        /// <param name="data">Path Drift raw data to be validated</param>
+        /// <returns>Whether the raw data is in a valid format to be converted</returns>
         public static bool Validate(this PathDriftRawData data)
         {
             if (string.IsNullOrWhiteSpace(data.ID)) return false;
@@ -25,6 +30,11 @@ namespace Insphere.Reader.Extensions
             if (string.IsNullOrWhiteSpace(data.URz) || !double.TryParse(data.URz, out _)) return false;
             return true;
         }
+        /// <summary>
+        /// Validate and convert Path Drift raw data to coordinate.
+        /// </summary>
+        /// <param name="data">Path Drift raw data point to be converted</param>
+        /// <returns>Path drift coordinate</returns>
         public static PathDriftCoordinate? ConvertToPathDriftCoordinate(this PathDriftRawData data)
         {
             if (!data.Validate()) return null;
