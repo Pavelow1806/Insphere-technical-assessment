@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69272D24-5186-412E-92E8-CBE9BDA3A4CB}|..\\Insphere.Global\\Insphere.Global.csproj|c:\\users\\james\\source\\repos\\insphere\\insphere-technical-assessment\\insphere.global\\services\\reader\\ireaderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69272D24-5186-412E-92E8-CBE9BDA3A4CB}|..\\Insphere.Global\\Insphere.Global.csproj|c:\\users\\james\\source\\repos\\insphere\\insphere-technical-assessment\\insphere.global\\configuration\\addressconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90A82468-5289-4CBC-8790-1A6B8FE6A252}|Insphere.API.csproj|c:\\users\\james\\source\\repos\\insphere\\insphere-technical-assessment\\insphere.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{90A82468-5289-4CBC-8790-1A6B8FE6A252}|Insphere.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{51E9998E-719D-4064-894A-A60795BF4A5C}|..\\Insphere.API.Testing\\Insphere.API.Testing.csproj|c:\\users\\james\\source\\repos\\insphere\\insphere-technical-assessment\\insphere.api.testing\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9540F0E2-8247-48B6-BFFA-BF20A8420E67}|..\\Insphere.API.Models\\Insphere.API.Models.csproj|c:\\users\\james\\source\\repos\\insphere\\insphere-technical-assessment\\insphere.api.models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{90A82468-5289-4CBC-8790-1A6B8FE6A252}|Insphere.API.csproj|c:\\users\\james\\source\\repos\\insphere\\insphere-technical-assessment\\insphere.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{90A82468-5289-4CBC-8790-1A6B8FE6A252}|Insphere.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1629,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T13:45:32.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-24T13:45:24.283Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
@@ -35,67 +53,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IReaderService.cs",
-              "DocumentMoniker": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Global\\Services\\Reader\\IReaderService.cs",
-              "RelativeDocumentMoniker": "..\\Insphere.Global\\Services\\Reader\\IReaderService.cs",
-              "ToolTip": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Global\\Services\\Reader\\IReaderService.cs",
-              "RelativeToolTip": "..\\Insphere.Global\\Services\\Reader\\IReaderService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:40:25.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:38:08.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AddressConfiguration.cs",
-              "DocumentMoniker": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Global\\Configuration\\AddressConfiguration.cs",
-              "RelativeDocumentMoniker": "..\\Insphere.Global\\Configuration\\AddressConfiguration.cs",
-              "ToolTip": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Global\\Configuration\\AddressConfiguration.cs",
-              "RelativeToolTip": "..\\Insphere.Global\\Configuration\\AddressConfiguration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:35:33.554Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API.Testing\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\Insphere.API.Testing\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API.Testing\\UnitTest1.cs",
-              "RelativeToolTip": "..\\Insphere.API.Testing\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:34:19.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API.Models\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\Insphere.API.Models\\Class1.cs",
-              "ToolTip": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.API.Models\\Class1.cs",
-              "RelativeToolTip": "..\\Insphere.API.Models\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:30:58.612Z"
             }
           ]
         }

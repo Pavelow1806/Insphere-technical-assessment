@@ -1,3 +1,5 @@
+using Insphere.Global.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -22,10 +24,10 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-//Initialisaton
-using (var scope = app.Services.CreateScope())
-{
-    var services = scope.ServiceProvider;
-}
+// Initialise
+AddressConfiguration.Initialise(
+    _reader: "http://localhost:7065/",
+    _api: "http://localhost:7065/"
+);
 
 app.Run();

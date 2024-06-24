@@ -386,6 +386,21 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Insphere.Global/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Google.Protobuf": "3.27.1",
+          "Grpc.AspNetCore": "2.63.0",
+          "Grpc.Net.Client": "2.63.0"
+        },
+        "compile": {
+          "bin/placeholder/Insphere.Global.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Insphere.Global.dll": {}
+        }
       }
     }
   },
@@ -1195,6 +1210,11 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Insphere.Global/1.0.0": {
+      "type": "project",
+      "path": "../Insphere.Global/Insphere.Global.csproj",
+      "msbuildProject": "../Insphere.Global/Insphere.Global.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1203,6 +1223,7 @@
       "Grpc.AspNetCore >= 2.63.0",
       "Grpc.Net.Client >= 2.63.0",
       "Grpc.Tools >= 2.64.0",
+      "Insphere.Global >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -1241,7 +1262,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Global\\Insphere.Global.csproj": {
+              "projectPath": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Global\\Insphere.Global.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

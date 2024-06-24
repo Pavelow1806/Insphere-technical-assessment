@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Protos\PathDrift.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.27.1" />
     <PackageReference Include="Grpc.AspNetCore" Version="2.63.0" />
     <PackageReference Include="Grpc.Net.Client" Version="2.63.0" />
@@ -14,7 +18,10 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-	<Protobuf Include="Protos\PathDrift.proto"/>
   </ItemGroup>
 
+  <ItemGroup>
+    <Protobuf Include="Protos\PathDrift.proto" GrpcServices="Server" Access="Internal"/>
+  </ItemGroup>
+	
 </Project>

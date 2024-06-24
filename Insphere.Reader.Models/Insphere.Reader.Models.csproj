@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+	  <PackageReference Include="Grpc.AspNetCore" Version="2.63.0" />
+	  <PackageReference Include="Grpc.Tools" Version="2.64.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+    <ProjectReference Include="..\Insphere.Global\Insphere.Global.csproj" />
+  </ItemGroup>
 </Project>

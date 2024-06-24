@@ -1,5 +1,8 @@
 ﻿syntax = "proto3";
 
+package PathDrift;
+option csharp_namespace = "Insphere.Protos";
+
 service Reader {
 	rpc GetCoordinates (PathDriftCoordinatesRequest) returns (PathDriftCoordinatesResponse);
 }
@@ -27,5 +30,7 @@ message PathDriftCoordinate {
 }
 
 message PathDriftCoordinatesResponse {
-	repeated PathDriftCoordinate coordinates = 1;
+	bool Success = 1;
+	string Message = 2;
+	repeated PathDriftCoordinate coordinates = 3;
 }

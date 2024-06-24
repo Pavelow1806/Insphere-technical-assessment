@@ -17,7 +17,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Insphere.Global\Insphere.Global.csproj" />
+    <ProjectReference Include="..\Insphere.Reader.Models\Insphere.Reader.Models.csproj" />
+    <ProjectReference Include="..\Insphere.Reader\Insphere.Reader.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Data\invalid.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Data\valid.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

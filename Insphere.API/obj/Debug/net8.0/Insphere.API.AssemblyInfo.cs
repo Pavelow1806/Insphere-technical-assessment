@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Insphere.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d02995f757407b245b64bd82c5e5d19227ccfdd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e7730a8441f13a4c2ceb7b7f4463cd8ffa48cec")]
 [assembly: System.Reflection.AssemblyProductAttribute("Insphere.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Insphere.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
