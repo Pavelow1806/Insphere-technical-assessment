@@ -12,7 +12,7 @@ namespace Insphere.Reader.Services.CsvReader
         public async Task<PathDriftRawDataResponse> ReadDriftPathData(string path, CancellationToken cancellationToken)
         {
             var lines = await File.ReadAllLinesAsync(path, cancellationToken);
-            // Convert column numbers to property values
+            // Convert column numbers to property values using a more readable enum -> int pattern
             var rawData = lines
                 .Select(line => {
                     var items = line.Split(",");

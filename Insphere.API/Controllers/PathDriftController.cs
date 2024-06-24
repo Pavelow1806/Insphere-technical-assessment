@@ -19,8 +19,9 @@ namespace Insphere.API.Controllers
 
         [HttpGet]
         [Route("Data")]
-        public async Task<PathDriftCoordinatesResponse> Data(CancellationToken cancellationToken)
+        public PathDriftCoordinatesResponse Data(CancellationToken cancellationToken)
         {
+            // Use gRPC to get coordinate data from the Reader service
             using (var channel = GrpcChannel.ForAddress(AddressConfiguration.Reader))
             {
                 var client = new Reader.ReaderClient(channel);
