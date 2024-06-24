@@ -5,7 +5,7 @@ using Insphere.Reader.Services.CsvReader;
 
 namespace Insphere.Reader.Services.Reader
 {
-    public class ReaderService : Insphere.Protos.Reader.ReaderBase
+    public class ReaderService : Protos.Reader.ReaderBase
     {
         private readonly ILogger<ReaderService> _logger;
         private readonly ICsvReader _csvReader;
