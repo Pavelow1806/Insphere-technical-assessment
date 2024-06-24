@@ -1,14 +1,11 @@
 ﻿syntax = "proto3";
+import "google/protobuf/empty.proto";
 
 package PathDrift;
 option csharp_namespace = "Insphere.Protos";
 
 service Reader {
-	rpc GetCoordinates (PathDriftCoordinatesRequest) returns (PathDriftCoordinatesResponse);
-}
-
-message PathDriftCoordinatesRequest {
-	string ID = 1;
+	rpc GetCoordinates (google.protobuf.Empty) returns (PathDriftCoordinatesResponse);
 }
 
 message PathDriftCoordinate {

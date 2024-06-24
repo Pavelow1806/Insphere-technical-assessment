@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Insphere.Global\Insphere.Global.csproj" />
+	  <Protobuf Include="..\Insphere.Global\Protos\PathDrift.proto" GrpcServices="Client" />
   </ItemGroup>
 
 </Project>

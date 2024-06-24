@@ -14,8 +14,7 @@ namespace Insphere.Reader.Services.Reader
             _logger = logger;
             _csvReader = csvReader;
         }
-
-        public override async Task<PathDriftCoordinatesResponse> GetCoordinates(PathDriftCoordinatesRequest request, ServerCallContext context)
+        public override async Task<PathDriftCoordinatesResponse> GetCoordinates(Google.Protobuf.WellKnownTypes.Empty request, ServerCallContext context)
         {
             var path = Path.Combine(Environment.CurrentDirectory, "Data", "run1.csv");
             var readResponse = await _csvReader.ReadDriftPathData(path, context.CancellationToken);

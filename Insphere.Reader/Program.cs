@@ -31,8 +31,8 @@ app.MapControllers();
 
 // Initialise
 AddressConfiguration.Initialise(
-    _reader: "http://localhost:7065/",
-    _api: "http://localhost:7065/"
+    _reader: app.Configuration["Addresses:Reader"],
+    _api: app.Configuration["Addresses:API"]
 );
 
 app.Run();
