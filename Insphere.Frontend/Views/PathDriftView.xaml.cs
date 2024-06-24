@@ -1,4 +1,5 @@
-﻿using Insphere.Frontend.ViewModels;
+﻿using HelixToolkit.Wpf;
+using Insphere.Frontend.ViewModels;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -24,6 +25,12 @@ namespace Insphere.Frontend
             InitializeComponent();
             _container = container;
             DataContext = _container.Resolve<IPathDriftViewModel>();
+            Configure3dViewer();
+        }
+
+        private void Configure3dViewer()
+        {
+            viewPort3d.RotateGesture = new MouseGesture(MouseAction.LeftClick);
         }
     }
 }

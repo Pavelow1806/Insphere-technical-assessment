@@ -16,6 +16,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="HelixToolkit.Wpf" Version="2.25.0" />
     <PackageReference Include="Unity" Version="5.11.10" />
     <ProjectReference Include="..\Insphere.Global\Insphere.Global.csproj" />
 	  <Protobuf Include="..\Insphere.Global\Protos\PathDrift.proto" GrpcServices="Client" />

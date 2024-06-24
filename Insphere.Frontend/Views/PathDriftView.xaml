@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Insphere.Frontend"
+        xmlns:helix="http://helix-toolkit.org/wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -79,7 +80,12 @@
             </GridSplitter>
             <!--Visual-->
             <Grid Grid.Column="2">
-
+                <helix:HelixViewport3D ZoomExtentsWhenLoaded="true" x:Name="viewPort3d">
+                    <helix:HelixViewport3D.Camera>
+                        <PerspectiveCamera />
+                    </helix:HelixViewport3D.Camera>
+                    <helix:DefaultLights/>
+                </helix:HelixViewport3D>
             </Grid>
         </Grid>
         <Label Grid.Row="1" FontSize="10" Content="{Binding Status, UpdateSourceTrigger=PropertyChanged}"></Label>
