@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Insphere.Reader.Testing")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0d02995f757407b245b64bd82c5e5d19227ccfdd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f14bcb22e8b5e9d6a29db54087127ffe2765c17")]
 [assembly: System.Reflection.AssemblyProductAttribute("Insphere.Reader.Testing")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Insphere.Reader.Testing")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

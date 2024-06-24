@@ -3,12 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Reader\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{89559282-FDA6-4DCD-90BD-74E063901371}|..\\Insphere.Reader.Testing\\Insphere.Reader.Testing.csproj|c:\\users\\james\\source\\repos\\insphere\\insphere-technical-assessment\\insphere.reader.testing\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8E54B663-CFC3-46A0-9FA3-BB6EF32D357C}|..\\Insphere.Reader.Models\\Insphere.Reader.Models.csproj|c:\\users\\james\\source\\repos\\insphere\\insphere-technical-assessment\\insphere.reader.models\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3E92665F-3529-4CB9-9097-7A915B6BBD29}|Insphere.Reader.csproj|c:\\users\\james\\source\\repos\\insphere\\insphere-technical-assessment\\insphere.reader\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E92665F-3529-4CB9-9097-7A915B6BBD29}|Insphere.Reader.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -20,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 1629,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -31,41 +25,21 @@
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Reader.Testing\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\Insphere.Reader.Testing\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Reader.Testing\\UnitTest1.cs",
-              "RelativeToolTip": "..\\Insphere.Reader.Testing\\UnitTest1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:28:53.574Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Reader.Models\\Class1.cs",
-              "RelativeDocumentMoniker": "..\\Insphere.Reader.Models\\Class1.cs",
-              "ToolTip": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Reader.Models\\Class1.cs",
-              "RelativeToolTip": "..\\Insphere.Reader.Models\\Class1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:26:40.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Reader\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\james\\source\\repos\\Insphere\\Insphere-technical-assessment\\Insphere.Reader\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:25:30.273Z"
+              "WhenOpened": "2024-06-22T14:25:30.273Z",
+              "EditorCaption": ""
             }
           ]
         }

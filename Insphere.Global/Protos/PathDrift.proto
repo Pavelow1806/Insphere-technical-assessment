@@ -1,0 +1,31 @@
+﻿syntax = "proto3";
+
+service Reader {
+	rpc GetCoordinates (PathDriftCoordinatesRequest) returns (PathDriftCoordinatesResponse);
+}
+
+message PathDriftCoordinatesRequest {
+	string ID = 1;
+}
+
+message PathDriftCoordinate {
+	string ID = 1;
+	int32 Index = 2;
+	double X = 3;
+	double Y = 4;
+	double Z = 5;
+	double Rx = 6;
+	double Ry = 7;
+	double Rz = 8;
+	double Ux = 9;
+	double Uy = 10;
+	double Uz = 11;
+	double UTranslation = 12;
+	double URx = 13;
+	double URy = 14;
+	double URz = 15;
+}
+
+message PathDriftCoordinatesResponse {
+	repeated PathDriftCoordinate coordinates = 1;
+}

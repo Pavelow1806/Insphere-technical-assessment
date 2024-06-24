@@ -1,0 +1,13 @@
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\bin\Debug\net8.0\Insphere.Global.deps.json
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\bin\Debug\net8.0\Insphere.Global.dll
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\bin\Debug\net8.0\Insphere.Global.pdb
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\obj\Debug\net8.0\Insphere.Global.csproj.AssemblyReference.cache
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\obj\Debug\net8.0\Insphere.Global.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\obj\Debug\net8.0\Insphere.Global.AssemblyInfoInputs.cache
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\obj\Debug\net8.0\Insphere.Global.AssemblyInfo.cs
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\obj\Debug\net8.0\Insphere.Global.csproj.CoreCompileInputs.cache
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\obj\Debug\net8.0\Insphere.Global.sourcelink.json
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\obj\Debug\net8.0\Insphere.Global.dll
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\obj\Debug\net8.0\refint\Insphere.Global.dll
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\obj\Debug\net8.0\Insphere.Global.pdb
+C:\Users\james\source\repos\Insphere\Insphere-technical-assessment\Insphere.Global\obj\Debug\net8.0\ref\Insphere.Global.dll
