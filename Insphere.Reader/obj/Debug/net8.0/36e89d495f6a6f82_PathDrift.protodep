@@ -1,2 +1,0 @@
-obj\Debug\net8.0/PathDrift.cs \
-obj\Debug\net8.0/PathDriftGrpc.cs: ../Insphere.Global/Protos/PathDrift.proto
