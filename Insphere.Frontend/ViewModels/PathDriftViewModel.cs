@@ -1,5 +1,6 @@
 ﻿using HelixToolkit.Wpf;
 using Insphere.Frontend.Extensions;
+using Insphere.Frontend.Framework;
 using Insphere.Frontend.Models;
 using Insphere.Frontend.Services.API;
 using Microsoft.AspNetCore.Http;
@@ -10,6 +11,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using System.Windows.Media.Media3D;
 
 namespace Insphere.Frontend.ViewModels
@@ -47,6 +49,31 @@ namespace Insphere.Frontend.ViewModels
             }
         }
 
+        private bool error = false;
+        public bool Error
+        {
+            get => error;
+            set
+            {
+                if (error != value)
+                {
+                    error = value;
+                    OnPropertyChanged(nameof(Error));
+                }
+            }
+        }
+
+        private ICommand retryCommand;
+        public ICommand RetryCommand
+        {
+            get
+            {
+                if (retryCommand == null)
+                    retryCommand = new RelayCommand(param => RequestData());
+                return retryCommand;
+            }
+        }
+
         private readonly IApiService _apiService;
         public HelixViewport3D Viewport { get; set; }
         public PathDriftViewModel(IApiService apiService) 
@@ -57,12 +84,14 @@ namespace Insphere.Frontend.ViewModels
 
         public async void RequestData()
         {
+            Error = false;
             Status = "Data requested...";
             var response = await _apiService.GetCoordinates(new CancellationToken());
             Status = "Processing response...";
             if (response == null)
             {
                 Status = "Unable to establish connection to server.";
+                Error = true;
             }
             else
             {
@@ -89,6 +118,7 @@ namespace Insphere.Frontend.ViewModels
                 else
                 {
                     Status = response.Message;
+                    Error = true;
                 }
             }
         }

@@ -21,13 +21,25 @@ namespace Insphere.API.Controllers
         [Route("Data")]
         public PathDriftCoordinatesResponse Data(CancellationToken cancellationToken)
         {
-            // Use gRPC to get coordinate data from the Reader service
-            using (var channel = GrpcChannel.ForAddress(AddressConfiguration.Reader))
+            try
             {
-                var client = new Reader.ReaderClient(channel);
-                var options = new CallOptions(cancellationToken: cancellationToken);
-                var response = client.GetCoordinates(new Google.Protobuf.WellKnownTypes.Empty(), options);
-                return response;
+                // Use gRPC to get coordinate data from the Reader service
+                using (var channel = GrpcChannel.ForAddress(AddressConfiguration.Reader))
+                {
+                    var client = new Reader.ReaderClient(channel);
+                    var options = new CallOptions(cancellationToken: cancellationToken);
+                    var response = client.GetCoordinates(new Google.Protobuf.WellKnownTypes.Empty(), options);
+                    return response;
+                }
+            }
+            catch (Exception ex) 
+            {
+                _logger.LogError(ex, null);
+                return new PathDriftCoordinatesResponse
+                {
+                    Success = false,
+                    Message = "Unable to reach the Reader service, ensure the service is running and please try again."
+                };
             }
         }
     }

@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Insphere.Frontend.ViewModels
 {
+    /// <summary>
+    /// Primarily used for Unity dependency injection, not actually necessary
+    /// </summary>
     public interface IPathDriftViewModel
     {
         public HelixViewport3D Viewport { get; set; }
