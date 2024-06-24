@@ -3,6 +3,7 @@ using Insphere.Frontend.ViewModels;
 using System.ComponentModel;
 using System.Configuration;
 using System.Data;
+using System.Net.Http;
 using System.Windows;
 using Unity;
 
@@ -19,6 +20,11 @@ namespace Insphere.Frontend
             IUnityContainer container = new UnityContainer();
             container.RegisterType<IPathDriftViewModel, PathDriftViewModel>();
             container.RegisterType<IApiService, ApiService>();
+            var httpClient = new HttpClient
+            {
+                BaseAddress = new Uri(Insphere.Frontend.Properties.Settings.Default.API),
+            };
+            container.RegisterInstance(httpClient);
             Current.MainWindow = container.Resolve<PathDriftWindow>();
             Current.MainWindow.Show();
         }

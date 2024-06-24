@@ -7,20 +7,81 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <!--Table-->
-        <Grid>
-            
-        </Grid>
-        <!--Splitter-->
-        <GridSplitter Grid.Column="1" Margin="2,0,2,0" Width="3" Background="Purple" 
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MaxWidth="710"/>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <!--Table-->
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="40"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                        <ColumnDefinition Width="100"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column="0">ID</Label>
+                    <Label Grid.Column="1">Index</Label>
+                    <Label Grid.Column="2">X</Label>
+                    <Label Grid.Column="3">Y</Label>
+                    <Label Grid.Column="4">Z</Label>
+                    <Label Grid.Column="5">Rx</Label>
+                    <Label Grid.Column="6">Ry</Label>
+                    <Label Grid.Column="7">Rz</Label>
+                </Grid>
+                <ListView Grid.Row="1" 
+                          ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                          ItemsSource="{Binding Models, UpdateSourceTrigger=PropertyChanged}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="100"/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0" Content="{Binding ID}"></Label>
+                                <Label Grid.Column="1" Content="{Binding Index}"></Label>
+                                <Label Grid.Column="2" Content="{Binding X}"></Label>
+                                <Label Grid.Column="3" Content="{Binding Y}"></Label>
+                                <Label Grid.Column="4" Content="{Binding Z}"></Label>
+                                <Label Grid.Column="5" Content="{Binding Rx}"></Label>
+                                <Label Grid.Column="6" Content="{Binding Ry}"></Label>
+                                <Label Grid.Column="7" Content="{Binding Rz}"></Label>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+            <!--Splitter-->
+            <GridSplitter Grid.Column="1" Margin="2,0,2,0" Width="3" Background="Purple" 
                   VerticalAlignment="Stretch" 
                   HorizontalAlignment="Center">
-        </GridSplitter>
-        <!--Visual-->
+            </GridSplitter>
+            <!--Visual-->
+            <Grid Grid.Column="2">
+
+            </Grid>
+        </Grid>
+        <Label Grid.Row="1" FontSize="10" Content="{Binding Status, UpdateSourceTrigger=PropertyChanged}"></Label>
     </Grid>
 </Window>

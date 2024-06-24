@@ -25,7 +25,7 @@ namespace Insphere.API.Controllers
             {
                 var client = new Reader.ReaderClient(channel);
                 var options = new CallOptions(cancellationToken: cancellationToken);
-                var response = await client.GetCoordinatesAsync(new Google.Protobuf.WellKnownTypes.Empty(), options);
+                var response = client.GetCoordinates(new Google.Protobuf.WellKnownTypes.Empty(), options);
                 return response;
             }
         }
