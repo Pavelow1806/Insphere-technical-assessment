@@ -12,5 +12,8 @@ namespace Insphere.Frontend.Models
     public class PathDriftResponse : ResponseBase
     {
         public RepeatedField<PathDriftCoordinate> Coordinates { get; set; } = new RepeatedField<PathDriftCoordinate>();
+        public double AverageX { get; set; }
+        public double AverageY { get; set; }
+        public double AverageZ { get; set; }
     }
 }

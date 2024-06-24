@@ -1,4 +1,5 @@
-﻿using Insphere.Frontend.Extensions;
+﻿using HelixToolkit.Wpf;
+using Insphere.Frontend.Extensions;
 using Insphere.Frontend.Models;
 using Insphere.Frontend.Services.API;
 using Microsoft.AspNetCore.Http;
@@ -9,6 +10,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Media3D;
 
 namespace Insphere.Frontend.ViewModels
 {
@@ -46,6 +48,7 @@ namespace Insphere.Frontend.ViewModels
         }
 
         private readonly IApiService _apiService;
+        public HelixViewport3D Viewport { get; set; }
         public PathDriftViewModel(IApiService apiService) 
         { 
             _apiService = apiService;
@@ -65,9 +68,22 @@ namespace Insphere.Frontend.ViewModels
             {
                 if (response.Success)
                 {
+                    // Display table view data
                     Models = new ObservableCollection<PathDriftModel>(response.Coordinates
                         .Select(coordinate => coordinate.ConvertToModel())
                         .ToList());
+                    // Clear existing 3d viewport children and render new view
+                    Viewport.Children.Clear();
+                    var linesVisual = new LinesVisual3D();
+                    for (int i = 0; i < models.Count() - 1; i++)
+                    {
+                        var currentModel = models[i];
+                        var nextModel = models[i + 1];
+                        linesVisual.Points.Add(currentModel.ToPoint3D());
+                        linesVisual.Points.Add(nextModel.ToPoint3D());
+                    }
+                    Viewport.Children.Add(linesVisual);
+                    Viewport.CameraController.CameraTarget = new Point3D(response.AverageX, response.AverageY, response.AverageZ);
                     Status = $"Displaying {Models.Count()} models in current view.";
                 }
                 else

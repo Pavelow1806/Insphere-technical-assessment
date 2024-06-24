@@ -24,13 +24,15 @@ namespace Insphere.Frontend
         {
             InitializeComponent();
             _container = container;
-            DataContext = _container.Resolve<IPathDriftViewModel>();
+            var context = _container.Resolve<IPathDriftViewModel>() as IPathDriftViewModel;
+            DataContext = context;
             Configure3dViewer();
+            context.Viewport = viewport;
         }
 
         private void Configure3dViewer()
         {
-            viewPort3d.RotateGesture = new MouseGesture(MouseAction.LeftClick);
+            viewport.RotateGesture = new MouseGesture(MouseAction.LeftClick);
         }
     }
 }

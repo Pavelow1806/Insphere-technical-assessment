@@ -32,7 +32,11 @@ namespace Insphere.Reader.Services.Reader
                 .Select(data => data.ConvertToPathDriftCoordinate())
                 .OfType<PathDriftCoordinate>()
                 .ToList();
+            var centre = coordinates.CalculateCentrePoint();
             response.Coordinates.AddToProtoList(coordinates);
+            response.AverageX = centre.AverageX;
+            response.AverageY = centre.AverageY;
+            response.AverageZ = centre.AverageZ;
             return response;
         }
     }

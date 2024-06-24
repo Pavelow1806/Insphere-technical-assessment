@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Insphere.Frontend"
-        xmlns:helix="http://helix-toolkit.org/wpf"
+        xmlns:helix="clr-namespace:HelixToolkit.Wpf;assembly=HelixToolkit.Wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -14,7 +14,7 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition MaxWidth="710"/>
+                <ColumnDefinition MaxWidth="410"/>
                 <ColumnDefinition Width="auto"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
@@ -31,18 +31,12 @@
                         <ColumnDefinition Width="100"/>
                         <ColumnDefinition Width="100"/>
                         <ColumnDefinition Width="100"/>
-                        <ColumnDefinition Width="100"/>
-                        <ColumnDefinition Width="100"/>
-                        <ColumnDefinition Width="100"/>
                     </Grid.ColumnDefinitions>
                     <Label Grid.Column="0">ID</Label>
                     <Label Grid.Column="1">Index</Label>
                     <Label Grid.Column="2">X</Label>
                     <Label Grid.Column="3">Y</Label>
                     <Label Grid.Column="4">Z</Label>
-                    <Label Grid.Column="5">Rx</Label>
-                    <Label Grid.Column="6">Ry</Label>
-                    <Label Grid.Column="7">Rz</Label>
                 </Grid>
                 <ListView Grid.Row="1" 
                           ScrollViewer.HorizontalScrollBarVisibility="Disabled"
@@ -56,18 +50,12 @@
                                     <ColumnDefinition Width="100"/>
                                     <ColumnDefinition Width="100"/>
                                     <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="100"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Grid.Column="0" Content="{Binding ID}"></Label>
                                 <Label Grid.Column="1" Content="{Binding Index}"></Label>
                                 <Label Grid.Column="2" Content="{Binding X}"></Label>
                                 <Label Grid.Column="3" Content="{Binding Y}"></Label>
                                 <Label Grid.Column="4" Content="{Binding Z}"></Label>
-                                <Label Grid.Column="5" Content="{Binding Rx}"></Label>
-                                <Label Grid.Column="6" Content="{Binding Ry}"></Label>
-                                <Label Grid.Column="7" Content="{Binding Rz}"></Label>
                             </Grid>
                         </DataTemplate>
                     </ListView.ItemTemplate>
@@ -80,7 +68,7 @@
             </GridSplitter>
             <!--Visual-->
             <Grid Grid.Column="2">
-                <helix:HelixViewport3D ZoomExtentsWhenLoaded="true" x:Name="viewPort3d">
+                <helix:HelixViewport3D ZoomExtentsWhenLoaded="true" x:Name="viewport">
                     <helix:HelixViewport3D.Camera>
                         <PerspectiveCamera />
                     </helix:HelixViewport3D.Camera>

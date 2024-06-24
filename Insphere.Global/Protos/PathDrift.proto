@@ -30,4 +30,7 @@ message PathDriftCoordinatesResponse {
 	bool Success = 1;
 	string Message = 2;
 	repeated PathDriftCoordinate coordinates = 3;
+	double averageX = 4;
+	double averageY = 5;
+	double averageZ = 6;
 }
